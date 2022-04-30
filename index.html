@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
-    <link rel="stylesheet" type="text/css" id="mce-u0" referrerpolicy="origin"
-          href="https://cdn.tiny.cloud/1/3neetv07m3n5xg14nqaxdq7cewmsvubr8i2eg045x7mtr0dc/tinymce/5.10.3-128/skins/ui/oxide/skin.min.css">
-    <meta charset="utf-8">
+  <script src="https://cdn.tiny.cloud/1/3neetv07m3n5xg14nqaxdq7cewmsvubr8i2eg045x7mtr0dc/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 </head>
 <body>
-  <script src="https://cdn.tiny.cloud/1/3neetv07m3n5xg14nqaxdq7cewmsvubr8i2eg045x7mtr0dc/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+  <textarea>
+     Welcome to TinyMCE!
+  </textarea>
+  <script>
     tinymce.init({
-        selector: "#emoji",
-        plugins: "emoticons",
-        toolbar: "emoticons",
-        toolbar_location: "bottom",
-        menubar: false
+      selector: 'textarea',
+      plugins: 'a11ychecker advcode casechange export formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker',
+      toolbar: 'a11ycheck addcomment showcomments casechange checklist code export formatpainter pageembed permanentpen table',
+      toolbar_mode: 'floating',
+      tinycomments_mode: 'embedded',
+      tinycomments_author: 'Author name',
     });
-</script>
+  </script>
+</body>
+
 <div id="menu">
     <li><a href="#about">About Me</a></li>
     <li><a href="#photos">My Photos</a></li>
@@ -122,10 +125,8 @@
                 <input type="email" name="email" placeholder="name@domain.com" required=""> 
             </label>
             <p>Message: </p>
-            <textarea id="emoji" name="comments" rows="10" cols="100" aria-hidden="true"
-                      style="display: none;"></textarea>
-            <div role="application" class="tox tox-tinymce tox-tinymce--toolbar-bottom" aria-disabled="false"
-                 style="visibility: hidden; height: 200px;">
+            <textarea id="emoji" name="comments" rows="10" cols="100" aria-hidden="true" style="display: none;"></textarea>
+            <div role="application" class="tox tox-tinymce tox-tinymce--toolbar-bottom" aria-disabled="false" style="visibility: hidden; height: 200px;">
                 <div class="tox-editor-container">
                     <div class="tox-sidebar-wrap">
                         <div class="tox-edit-area">
