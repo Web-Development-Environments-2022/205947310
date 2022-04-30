@@ -94,6 +94,7 @@ pre.code {
     font-size: 24px;
     direction: rtl;
     counter-reset: listing;
+    padding: 5px 40px;
   }
 
   pre.code code {
@@ -109,5 +110,6 @@ pre.code {
     font-size: 24px;
     direction: rtl;
     counter-reset: listing;
+    padding: 5px 40px;
   }
 
